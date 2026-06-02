@@ -326,7 +326,9 @@ footer {
 @media (max-width: 768px) {
 
     .hero {
-        min-height: 70vh;
+        min-height: auto;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
 
     .hero-container {
@@ -349,9 +351,13 @@ footer {
 
     .nav-links {
         display: flex;
-        gap: 1rem;
-        flex-wrap: wrap;
+        gap: .8rem;
+        flex-wrap: nowrap;
         justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: .8rem;
     }
 
     .contact-grid {
@@ -370,5 +376,10 @@ footer {
 
     .contact-card span {
         font-size: 0.9rem;
+    }
+
+    footer {
+        white-space: nowrap;
+        font-size: .75rem;
     }
 }
