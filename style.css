@@ -197,7 +197,7 @@ section {
 .contact-card {
     background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: 16px;
+    border-radius: 12px;
 }
 
 .about-card,
@@ -294,6 +294,11 @@ section {
     color: white;
 }
 
+#contact {
+    padding-top: 0.1rem;
+    padding-bottom: 3rem;
+}
+
 /* Footer */
 
 footer {
@@ -327,12 +332,12 @@ footer {
 
     .hero {
         min-height: auto;
-        padding-top: 2rem;
+        padding-top: 100px;
         padding-bottom: 2rem;
     }
 
     .hero-container {
-        gap: 2rem;
+        gap: 6rem;
     }
 
     .hero-text {
@@ -342,11 +347,12 @@ footer {
     .hero-image {
         width: 220px;
         height: 220px;
-        margin: 0 auto 1rem auto;
+        margin: 0 auto 2rem auto;
     }
 
     .title-tag {
-        margin-bottom: 0.5rem;
+        white-space: nowrap;
+        font-size: 0.9rem;
     }
 
     .nav-links {
@@ -358,6 +364,11 @@ footer {
 
     .nav-links a {
         font-size: .8rem;
+    }
+
+    #contact {
+        padding-top: 0.5rem;
+        padding-bottom: 2rem;
     }
 
     .contact-grid {
@@ -376,6 +387,16 @@ footer {
 
     .contact-card span {
         font-size: 0.9rem;
+    }
+
+    .about-card,
+    .education-card,
+    .experience-card {
+        margin-bottom: 1.5rem;
+    }
+
+    section {
+        padding: 0.5rem 2rem;
     }
 
     footer {
