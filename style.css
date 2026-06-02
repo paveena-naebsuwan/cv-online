@@ -323,7 +323,11 @@ footer {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: 70vh;
+    }
 
     .hero-container {
         gap: 2rem;
@@ -336,9 +340,35 @@ footer {
     .hero-image {
         width: 220px;
         height: 220px;
+        margin: 0 auto 1rem auto;
+    }
+
+    .title-tag {
+        margin-bottom: 0.5rem;
     }
 
     .nav-links {
-        display: none;
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contact-grid {
+        grid-template-columns: repeat(3, 90px);
+        gap: 1rem;
+    }
+
+    .contact-card {
+        width: 90px;
+        height: 90px;
+    }
+
+    .contact-card i {
+        font-size: 1.5rem;
+    }
+
+    .contact-card span {
+        font-size: 0.9rem;
     }
 }
